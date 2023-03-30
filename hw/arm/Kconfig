@@ -546,3 +546,9 @@ config ARMSSE
     select UNIMP
     select SSE_COUNTER
     select SSE_TIMER
+
+config MACHINE_X
+    bool
+	select SERIAL
+    select ARM_TIMER
+    select ARM_GIC
